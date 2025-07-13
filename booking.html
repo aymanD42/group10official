@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking - Somalia Independence Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Guest Booking</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery & Data</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="help.html">Help</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Book Your Place for the Independence Day Event</h2>
+
+    <p>
+      As part of the celebration of Somalia's Independence Day, we invite students to share their details and join the event. Fill in the form below to book your spot and tell us how you plan to celebrate this important day.
+    </p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="name">Full Name:</label><br />
+        <input type="text" id="name" name="name" required placeholder="Your name" /><br /><br />
+
+        <label for="major">Your Major:</label><br />
+        <select id="major" name="major" required>
+          <option value="">--Select Major--</option>
+          <option value="cs">Computer Science</option>
+          <option value="it">Information Technology</option>
+          <option value="se">Software Engineering</option>
+          <option value="other">Other</option>
+        </select><br /><br />
+
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br /><br />
+
+        <label>Hobbies:</label><br />
+        <input type="checkbox" id="reading" name="hobbies" value="reading" />
+        <label for="reading">Reading</label><br />
+        <input type="checkbox" id="coding" name="hobbies" value="coding" />
+        <label for="coding">Coding</label><br />
+        <input type="checkbox" id="music" name="hobbies" value="music" />
+        <label for="music">Music</label><br /><br />
+
+        <label for="comments">Any Comments?</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write something..."></textarea><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Independence Day Reflections</legend>
+
+        <label for="celebrate">How do you plan to celebrate?</label><br />
+        <input type="checkbox" id="flag" name="celebrate" value="flag" />
+        <label for="flag">Waving the Somali flag</label><br />
+        <input type="checkbox" id="dress" name="celebrate" value="dress" />
+        <label for="dress">Wearing traditional clothes</label><br />
+        <input type="checkbox" id="song" name="celebrate" value="song" />
+        <label for="song">Singing national songs</label><br /><br />
+
+        <label for="message">What message do you have for Somalia on its Independence Day?</label><br />
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your patriotic message..."></textarea><br /><br />
+      </fieldset>
+
+      <input type="submit" value="Submit Booking" />
+    </form>
+  </main>
+
+  <footer style="background: #004080; color: white; text-align: center; padding: 10px;">
+    <p>&copy; 2025 Group 10 – All Rights Reserved</p>
+  </footer>
+</body>
+</html>
